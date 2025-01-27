@@ -17,7 +17,8 @@ namespace rightAlignedStairCase
         }
 
         public static int getIntValue()
-        {   
+        {
+            Console.Write("Enter Max Staircase step: ");
             int NumValue = Convert.ToInt32(Console.ReadLine());
             return NumValue;
         }
