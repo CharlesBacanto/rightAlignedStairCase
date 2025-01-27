@@ -8,7 +8,7 @@ namespace rightAlignedStairCase
 {
     internal class Staircase
     {
-        public static string step(int n, int m) // Method for creating the steps
+        public static string step(int n, int m, char c) // Method for creating the steps
         {
             string stair = "";
             for (int i = 1; i <= m; i++) // For loop for adding the space
@@ -21,11 +21,13 @@ namespace rightAlignedStairCase
             }
             return stair;
         }
-        public static void staircase(int n) //Method for building the staircase
+        public static void staircase(int n, char c) //Method for building the staircase
         {
+            Console.WriteLine();
+            Console.WriteLine("Generated Staircase: ");
             for (int i = 1; i <= n; i++) // For loop to set each step counts
             {
-                Console.WriteLine(step(i, n - i));
+                Console.WriteLine(step(i, n - i, c));
             }
         }
     }

@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
 
-            Staircase.staircase(UserInput.getIntValue());
+            Staircase.staircase(UserInput.getIntValue(), UserInput.getCharValue());
         }
     }
 }
